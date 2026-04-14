@@ -89,8 +89,9 @@ def initialize_rag():
 def main():
     init_session_state()
 
-    st.title("🔍 RAG Document Search")
-    st.markdown("Ask questions about the loaded documents")
+    st.title("💳 BNPL AI Customer Support Assistant")
+    st.markdown("Ask questions about BNPL policies, payments, and customer support")
+    st.info("📄 Knowledge Base: BNPL Policy PDF + Fintech Help Pages (Sezzle, Klarna, Afterpay)")
 
     if not st.session_state.initialized:
         with st.spinner("Loading system..."):
